@@ -18,7 +18,7 @@ public class Helper {
 		try {
 			FileHandler.copy(src, new File(screenPath));
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		}
 		return screenPath;

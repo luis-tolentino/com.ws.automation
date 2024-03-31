@@ -33,13 +33,13 @@ public class DriverScript {
 //	create the application initialization method
 	public void initApplication() {
 		String browser = prop.getProperty("browser");
-		if(browser == "chrome") {
+		if((browser.trim().equalsIgnoreCase("chrome"))) {
 			driver = new ChromeDriver();
 		}
-		else if(browser == "firefox") {
+		else if(browser.trim().equalsIgnoreCase("firefox")) {
 			driver = new FirefoxDriver();
 		}
-		else if(browser == "edge") {
+		else if((browser.trim().equalsIgnoreCase("edge"))) {
 			driver = new EdgeDriver();
 		}
 		else {
