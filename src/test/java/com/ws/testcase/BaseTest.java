@@ -8,46 +8,49 @@ import org.testng.annotations.BeforeSuite;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
-import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.ws.base.DriverScript;
 import com.ws.pages.HomePage;
 import com.ws.pages.LoginPage;
+import com.ws.pages.UserHomePage;
 import com.ws.utils.Helper;
 
 public class BaseTest extends DriverScript {
 //	create the pages variables
 	HomePage homepage;
 	LoginPage loginpage;
-	
+	UserHomePage userhomepage;
+
 //	import the ExtentTest as logger and ExtentReports as reports
 	protected static ExtentTest logger;
 	protected static ExtentReports report;
-	
+
 //	create the setUpReport Method and implement using the ExtentSparkReporter Class
-	
+
 	@BeforeSuite
 	public void setUpReport() {
-		 ExtentSparkReporter extent = new ExtentSparkReporter("./testreport/automationreport.html");
-		 report = new ExtentReports();
-		 report.attachReporter(extent);
+		ExtentHtmlReporter extent = new ExtentHtmlReporter("./testreport/automationreport.html");
+		report = new ExtentReports();
+		report.attachReporter(extent);
 	}
-	
+
 //	initialize the application and setup the pages before the Methods
-	
+
 	@BeforeMethod
 	public void setUp() {
 		initApplication();
-		
+
 		homepage = new HomePage();
 		loginpage = new LoginPage();
+		userhomepage = new UserHomePage();
 	}
-	
+
 	@AfterMethod
 	public void tearDown(ITestResult result) throws InterruptedException {
-		if(result.getStatus()== ITestResult.FAILURE) {
+		if (result.getStatus() == ITestResult.FAILURE) {
 			try {
-				logger.fail("Test failed",
-				MediaEntityBuilder.createScreenCaptureFromPath(Helper.screenCapture(driver)).build());
+				logger.fail("Test Failed",
+						MediaEntityBuilder.createScreenCaptureFromPath(Helper.screenCapture(driver)).build());
 			} catch (Exception e) {
 				e.printStackTrace();
 			}

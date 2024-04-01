@@ -14,7 +14,7 @@ public class Helper {
 
 	public static String screenCapture(WebDriver driver) {
 		File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		String screenPath = "C:/Users.netta.OneDrive.Desktop.WORKSPACE.Framework/com.ws.automation/testreport/screenshots/screen.png";
+		String screenPath = System.getProperty("user.dir")+"./testreport/screenshots/screen.png";
 		try {
 			FileHandler.copy(src, new File(screenPath));
 		} catch (IOException e) {
