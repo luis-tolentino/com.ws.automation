@@ -2,35 +2,35 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-01T18:03:15 EDT" name="Default suite" finished-at="2024-04-01T18:03:25 EDT" duration-ms="10196">
+  <suite started-at="2024-04-01T19:27:06 EDT" name="Default suite" finished-at="2024-04-01T19:27:18 EDT" duration-ms="11795">
     <groups>
     </groups>
-    <test started-at="2024-04-01T18:03:15 EDT" name="Default test" finished-at="2024-04-01T18:03:25 EDT" duration-ms="10196">
-      <class name="com.ws.testcase.TestPasswordRecoveryPage">
-        <test-method is-config="true" signature="setUpReport()[pri:0, instance:com.ws.testcase.TestPasswordRecoveryPage@2d3379b4]" started-at="2024-04-01T18:03:15 EDT" name="setUpReport" finished-at="2024-04-01T18:03:15 EDT" duration-ms="241" status="PASS">
+    <test started-at="2024-04-01T19:27:06 EDT" name="Default test" finished-at="2024-04-01T19:27:18 EDT" duration-ms="11795">
+      <class name="com.ws.testcase.TestBooksPage">
+        <test-method is-config="true" signature="setUpReport()[pri:0, instance:com.ws.testcase.TestBooksPage@765d7657]" started-at="2024-04-01T19:27:06 EDT" name="setUpReport" finished-at="2024-04-01T19:27:06 EDT" duration-ms="255" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpReport -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ws.testcase.TestPasswordRecoveryPage@2d3379b4]" started-at="2024-04-01T18:03:15 EDT" name="setUp" finished-at="2024-04-01T18:03:20 EDT" duration-ms="4558" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ws.testcase.TestBooksPage@765d7657]" started-at="2024-04-01T19:27:06 EDT" name="setUp" finished-at="2024-04-01T19:27:11 EDT" duration-ms="5074" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testValidEmailAddress()[pri:4, instance:com.ws.testcase.TestPasswordRecoveryPage@2d3379b4]" started-at="2024-04-01T18:03:20 EDT" name="testValidEmailAddress" finished-at="2024-04-01T18:03:22 EDT" duration-ms="1834" status="PASS">
+        <test-method signature="testBooksPage()[pri:0, instance:com.ws.testcase.TestBooksPage@765d7657]" started-at="2024-04-01T19:27:11 EDT" name="testBooksPage" finished-at="2024-04-01T19:27:14 EDT" duration-ms="2841" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testValidEmailAddress -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.ws.testcase.TestPasswordRecoveryPage@2d3379b4]" started-at="2024-04-01T18:03:22 EDT" name="tearDown" finished-at="2024-04-01T18:03:25 EDT" duration-ms="3750" status="PASS">
+        </test-method> <!-- testBooksPage -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.ws.testcase.TestBooksPage@765d7657]" started-at="2024-04-01T19:27:14 EDT" name="tearDown" finished-at="2024-04-01T19:27:18 EDT" duration-ms="3817" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testValidEmailAddress status=SUCCESS method=TestPasswordRecoveryPage.testValidEmailAddress()[pri:4, instance:com.ws.testcase.TestPasswordRecoveryPage@2d3379b4] output={null}]]]>
+                <![CDATA[[TestResult name=testBooksPage status=SUCCESS method=TestBooksPage.testBooksPage()[pri:0, instance:com.ws.testcase.TestBooksPage@765d7657] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.ws.testcase.TestPasswordRecoveryPage -->
+      </class> <!-- com.ws.testcase.TestBooksPage -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
