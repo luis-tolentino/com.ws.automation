@@ -15,6 +15,8 @@ public class LoginPage extends DriverScript {
 	WebElement passwordInputBox;
 	@FindBy(xpath = "//body/div[@class='master-wrapper-page']/div[@class='master-wrapper-content']/div[@class='master-wrapper-main']/div[@class='center-2']//form[@action='/login']//input[@value='Log in']")
 	WebElement loginButton;
+	@FindBy(linkText = "Forgot password?")
+	WebElement forgotPasswordLink;
 //************** Page initialization********//
 
 	public LoginPage() {
@@ -38,5 +40,13 @@ public class LoginPage extends DriverScript {
 
 	public void clickLoginButton() {
 		loginButton.click();
+	}
+
+	public boolean isForgotPasswordLinkDisplayed() {
+		return forgotPasswordLink.isDisplayed();
+	}
+	
+	public void clickForgotPasswordLink() {
+		forgotPasswordLink.click();
 	}
 }
