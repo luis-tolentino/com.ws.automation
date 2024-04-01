@@ -5,6 +5,7 @@
     <classes>
       <class name="com.ws.testcase.TestHomePage"/>
       <class name="com.ws.testcase.TestLoginPage"/>
+      <class name="com.ws.testcase.TestPasswordRecoveryPage"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
