@@ -7,7 +7,7 @@ public class TestLoginPage extends BaseTest{
 	
 	@Test(priority=1)
 	public void testGetLoginPageTitle() {
-		logger = report.createTest("Test getting login page Title");
+		logger = report.createTest("Test Login Page");
 		homepage.clickLoginLink();
 		logger.pass("clicked Log in link");
 		String title = loginpage.getLoginPageTitle();
